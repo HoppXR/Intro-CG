@@ -19,7 +19,7 @@ Shader "HoppXR/Rim"
         void surf (Input IN, inout SurfaceOutput o)
         {
             half rim = dot (normalize(IN.viewDir), o.Normal);
-            o.Emission = _RimColor.rgb * rim;
+            o.Emission = _RimColor.rgb * rim * _RimPower;
         }
         ENDCG
     }
