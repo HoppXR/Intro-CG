@@ -1,4 +1,4 @@
-Shader "HoppXR/StencilBuffer"
+Shader "HoppXR/Stencil"
 {
     Properties
     {
@@ -6,13 +6,16 @@ Shader "HoppXR/StencilBuffer"
     }
     SubShader
     {
-        Tags { "Queue" = "Geometry" }
-
+        Tags { "Queue" = "Geometry-1" }
+        
+        ColorMask 0
+        ZWrite Off
+        
         Stencil
         {
             Ref 1
-            Comp NotEqual
-            Pass Keep
+            Comp Always
+            Pass Replace
         }
 
         CGPROGRAM

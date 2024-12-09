@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StencilBuffer
-  m_Shader: {fileID: 4800000, guid: 4e6fa7ff3aa758b429edf493acf8dd2a, type: 3}
+  m_Name: Stencil
+  m_Shader: {fileID: 4800000, guid: 2d62b64a1a4370c4abe9325e9bcf580a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
